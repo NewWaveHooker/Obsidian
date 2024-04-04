@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"e71cf86e6c60f2bf","type":"text","text":"*Events*\nшина сигналов, к которой подключатся скрипты для того, чтобы прослушать сигналы\nотвечает за прогрессию (квесты) игры, сохранение, загрузку, на неё напрямую влияет игрок, к ней обращается Overmind","x":20,"y":-90,"width":280,"height":310},
+		{"id":"6ee8dd07cbe67d3b","type":"text","text":"Backend JRPG","x":-125,"y":-260,"width":200,"height":60,"color":"3"},
+		{"id":"ab2c0d95b309c096","type":"text","text":"*Overmind*\nследит за текущем состоянием игры - меняет, взаимодействует, напрямую влияет на геймплей\n\n\n","x":-380,"y":-90,"width":255,"height":210},
+		{"id":"bfd75d7db9aa2a51","type":"text","text":"*World*\nтекущий уровень игры, этот узел существует перманентно и лишь перестраивает свои ветки ","x":-220,"y":240,"width":273,"height":208}
+	],
+	"edges":[
+		{"id":"c8399de8ceee781c","fromNode":"6ee8dd07cbe67d3b","fromSide":"right","toNode":"e71cf86e6c60f2bf","toSide":"top"},
+		{"id":"87b154c13671def2","fromNode":"6ee8dd07cbe67d3b","fromSide":"left","toNode":"ab2c0d95b309c096","toSide":"top"},
+		{"id":"81ed3c2424fe0720","fromNode":"ab2c0d95b309c096","fromSide":"right","toNode":"e71cf86e6c60f2bf","toSide":"left"}
+	]
+}
